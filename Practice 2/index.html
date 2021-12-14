@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0" />
+    <title>Practice 2</title>
+    <style>
+      body {
+        background-image: url(wallpaper.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-blend-mode: screen;
+        background-color: purple;
+      }
+      h2 {
+        text-align: center;
+        color: black;
+      }
+      h1 {
+        text-align: center;
+        color: white;
+      }
+
+      div {
+        color: white;
+        background-color: rgb(58, 0, 58);
+        opacity: 0.8;
+        border-radius: 20px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: 20%;
+        margin-right: 20%;
+        padding: 20px;
+        font-size: 18px;
+      }
+      #rec1,
+      #rec2,
+      #rec3,
+      #improve1,
+      #improve2,
+      #improve3,
+      #improve4,
+      #improve5,
+      #improve6,
+      #improve7,
+      #improve8,
+      #improve9,
+      #improve10,
+      #improve11 {
+        width: 15px;
+        height: 15px;
+        font-size: 15px;
+      }
+      textarea {
+        width: 100%;
+        height: 60px;
+        font-size: 15px;
+      }
+      #sub {
+        width: 100%;
+        height: 35px;
+        font-size: 15px;
+        background-color: green;
+        color: white;
+      }
+      input,
+      select,
+      option {
+        width: 100%;
+        height: 25px;
+        font-size: 15px;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Survey Form</h1>
+    <pre><h2>Thank you for taking the time 
+to help us improve the platform</h2></pre>
+    <div>
+      Name
+      <br />
+      <input id="name" type="text" placeholder="Enter Your Name" />
+      <br />
+      <br />
+      Email
+      <br />
+      <input type="email" placeholder="Enter Email Address" id="mail" />
+      <br />
+      <br />
+      Age(Optional)
+      <br />
+      <input type="number" placeholder="Enter the Age" min="18" max="60" />
+      <br />
+      <br />
+      Which option best describes your current role?
+      <br />
+      <select>
+        <option>Student</option>
+        <option>Full Time Job</option>
+        <option>Full Time Learner</option>
+        <option>Prefer not to say</option>
+        <option>Others</option>
+      </select>
+      <br />
+      <br />
+      Would you recommend FCC to a friend?
+      <br />
+      <input type="radio" id="rec1" name="rec" /><label>Definately</label><br />
+      <input type="radio" id="rec2" name="rec" />Maybe<br />
+      <input type="radio" id="rec3" name="rec" />Not Sure<br />
+      <br />
+      What is your favorite feature of FCC?
+      <br />
+      <select>
+        <option>Challenges</option>
+        <option>Projects</option>
+        <option>Community</option>
+        <option>Open Source</option></select
+      ><br /><br />
+      What would you like improved?(Select all that apply)
+      <br /><br />
+      <input type="checkbox" id="improve1" />Front End Projects <br />
+      <input type="checkbox" id="improve2" />Back End Projects <br />
+      <input type="checkbox" id="improve3" />Data Visualization <br />
+      <input type="checkbox" id="improve4" />Challenges <br />
+      <input type="checkbox" id="improve5" />Open Source Community <br />
+      <input type="checkbox" id="improve6" />Gitter help rooms <br />
+      <input type="checkbox" id="improve7" />Videos <br />
+      <input type="checkbox" id="improve8" />City Meetups <br />
+      <input type="checkbox" id="improve9" />Wiki <br />
+      <input type="checkbox" id="improve10" />Forums <br />
+      <input type="checkbox" id="improve11" />Additional Courses<br /><br />
+      Any comments or Suggestions? <br />
+      <textarea placeholder="Enter Your Comments here"></textarea><br /><br />
+      <input type="Submit" value="Submit" id="sub" />
+    </div>
+  </body>
+</html>

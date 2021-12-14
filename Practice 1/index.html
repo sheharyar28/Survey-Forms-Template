@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width , initial-scale=1.0" />
+    <style>
+      body {
+        background-color: skyblue;
+      }
+      h1,
+      h2 {
+        text-align: center;
+      }
+      div {
+        background-color: whitesmoke;
+        margin: 50px;
+        border-radius: 10px;
+        width: auto;
+        padding-left: 30px;
+        padding: 10px;
+      }
+      td {
+        max-width: 110px;
+        padding: 3px;
+      }
+      button {
+        background-color: steelblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Good Vibes Form</h1>
+    <div>
+      <h2>Tell us something positive that has happened to you today.</h2>
+
+      <table>
+        <tr>
+          <td>Name</td>
+          <td>
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter Your Name"
+              size="20px"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter Your Email Address"
+              size="20px"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>On Scale on 1-10 how good was it?</td>
+          <td>
+            <input
+              type="number"
+              placeholder="Enter a number between 1-10"
+              size="20px"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Where did it happen?</td>
+          <td>
+            <select id="place">
+              <option>At Home</option>
+              <option>On my Commutte</option>
+              <option>At Work</option>
+              <option>On the Street</option>
+              <option>Other</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>At What time did it happen?</td>
+          <td>
+            <input type="radio" class="time1" name="time" />Morining<br />
+            <input type="radio" class="time2" name="time" />Afternoon<br />
+            <input type="radio" class="time3" name="time" />Evening<br />
+          </td>
+        </tr>
+        <tr>
+          <td>What emotions did you experience?(All that Apply)</td>
+          <td>
+            <input type="checkbox" id="emo1" /> Excited<br />
+            <input type="checkbox" id="emo2" /> Humbled<br />
+            <input type="checkbox" id="emo3" /> Elated<br />
+            <input type="checkbox" id="emo4" /> Loved<br />
+            <input type="checkbox" id="emo5" /> Enthusiactic
+          </td>
+        </tr>
+        <tr>
+          <td>Please describe your positive experience.</td>
+          <td>
+            <textarea
+              id="exp"
+              placeholder="Enter your experience here..."
+            ></textarea>
+          </td>
+        </tr>
+      </table>
+      <button type="submit">Submit</button>
+      <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        <input type="range" name="a" value="50" />+
+        <input type="number" name="b" value="25" />=
+        <output name="x"></output>
+      </form>
+    </div>
+  </body>
+</html>
